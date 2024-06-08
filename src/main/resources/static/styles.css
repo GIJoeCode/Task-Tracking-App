@@ -1,0 +1,60 @@
+/* Custom styles for specific elements */
+
+/* Navbar */
+.navbar-custom {
+    background-color: #000000; /* Change navbar background color to black */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Navbar brand text color */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Navbar link text color */
+}
+
+/* Task cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns items at the start of the row */
+    align-items: stretch; /* Aligns items vertically */
+}
+
+
+div.card {
+    flex: 0 0 calc(50% - 40px); /* Card won't grow or shrink, stays fixed at calculated width */
+    margin: 20px; /* Uniform margin for all sides */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+/* Add margin to the first card */
+div.card:first-child {
+    margin-top: 20px; /* Add margin to the first card */
+}
+
+/* CSS styles for task cards */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Alternate background colors */
+div.card:nth-child(even) {
+    background-color: #ffffff; /* White background for even cards */
+}
+
+div.card:nth-child(odd) {
+    background-color: #f8f9fa; /* Light grey background for odd cards */
+}
